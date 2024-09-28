@@ -1,9 +1,10 @@
-import React from "react";
 import ground_1 from "../assets/intro/ground_1.mp4";
 import ground_2 from "../assets/intro/ground_2.mp4";
 import ground_3 from "../assets/intro/ground_3.mp4";
+import { useEffect, useState, useRef } from "react";
+import { useScroll } from "framer-motion";
 
-const Intro = () => {
+const Intro = () => { 
   return (
     <div>
       <section
@@ -17,7 +18,7 @@ const Intro = () => {
             muted
             playsInline
             preload="auto"
-            className="w-full h-full bg-[#EBEBEB] block"
+            className="w-full h-full rounded-md absolute top-0 left-0 bg-[#EBEBEB] block"
           >
             <source
               src={ground_1}
@@ -30,7 +31,7 @@ const Intro = () => {
             muted
             playsInline
             preload="auto"
-            className="sc-iKTcqh w-full h-full absolute top-0 left-0 bg-[#EBEBEB] block"
+            className="sc-iKTcqh w-full h-full rounded-md absolute top-0 left-0 bg-[#EBEBEB] block"
           >
             <source
               src={ground_2}
@@ -43,7 +44,7 @@ const Intro = () => {
             muted
             playsInline
             preload="auto"
-            className="sc-iKTcqh fLlljr bg-[#EBEBEB] hidden"
+            className="sc-iKTcqh w-full h-full rounded-md absolute top-0 left-0 bg-[#EBEBEB] hidden"
           >
             <source
               src={ground_3}
